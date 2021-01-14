@@ -2,4 +2,10 @@
 
 f5_webserver_port: 80
 f5_webserver_name: "{{ hostname }}-{{ ansible_host }}"
-f5_webserver_host: "{{ ansible_host }}"
+f5_webserver_host: "{{ private_ip }}"
+
+ansible_python_interpreter: /usr/bin/python
+
+ansible_user: centos
+ansible_ssh_pass: centos
+ansible_become_pass: centos

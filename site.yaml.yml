@@ -9,9 +9,11 @@ all:
     webserver-1:
       ansible_host: 172.16.1.200
       hostname: webserver-1
+      private_ip: 10.10.10.11
     webserver-2:
       ansible_host: 172.16.1.199
       hostname: webserver-2
+      private_ip: 10.10.10.12
   children:
     f5:
       hosts:
