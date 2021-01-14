@@ -1,0 +1,5 @@
+---
+
+f5_webserver_port: 80
+f5_webserver_name: "{{ hostname }}-{{ ansible_host }}"
+f5_webserver_host: "{{ ansible_host }}"

@@ -8,8 +8,10 @@ all:
       ansible_host: 172.16.1.201
     webserver-1:
       ansible_host: 172.16.1.200
+      hostname: webserver-1
     webserver-2:
       ansible_host: 172.16.1.199
+      hostname: webserver-2
   children:
     f5:
       hosts:
@@ -18,7 +20,7 @@ all:
       hosts: 
         webserver-1:
         webserver-2:
-    webserver:
+    function_webserver:
       hosts: 
         webserver-1:
         webserver-2:
