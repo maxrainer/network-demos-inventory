@@ -41,17 +41,22 @@ all:
       hosts: 
         webserver-1:
         webserver-2:
+        webserver-3:
+        webserver-21:
+        webserver-22:
         tower:
     function_webserver:
       hosts: 
         webserver-1:
         webserver-2:
+        webserver-3:
         webserver-21:
         webserver-22:
     www_pool1:
       hosts: 
         webserver-1:
         webserver-2:
+        webserver-3:
     www_pool2:
       hosts:
         webserver-21:
