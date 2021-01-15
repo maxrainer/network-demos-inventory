@@ -18,7 +18,6 @@ all:
       f5_pool_member: www_pool1
     tower:
       ansible_host: 172.16.1.9
-      ansible_ssh_pass: Rfc1918!
     webserver-21:
       ansible_host: 172.16.2.200
       hostname: webserver-21
