@@ -10,10 +10,25 @@ all:
       ansible_host: 172.16.1.200
       hostname: webserver-1
       private_ip: 10.10.10.11
+      f5_pool_member: www_pool1
     webserver-2:
       ansible_host: 172.16.1.199
       hostname: webserver-2
       private_ip: 10.10.10.12
+      f5_pool_member: www_pool1
+    tower:
+      ansible_host: 172.16.1.9
+      ansible_ssh_pass: Rfc1918!
+    webserver-21:
+      ansible_host: 172.16.2.200
+      hostname: webserver-21
+      private_ip: 10.10.11.11
+      f5_pool_member: www_pool2
+    webserver-22:
+      ansible_host: 172.16.2.199
+      hostname: webserver-22
+      private_ip: 10.10.11.12
+      f5_pool_member: www_pool2
   children:
     f5:
       hosts:
@@ -22,7 +37,18 @@ all:
       hosts: 
         webserver-1:
         webserver-2:
+        tower:
     function_webserver:
       hosts: 
         webserver-1:
         webserver-2:
+        webserver-21:
+        webserver-22:
+    www_pool1:
+      hosts: 
+        webserver-1:
+        webserver-2:
+    www_pool2:
+      hosts:
+        webserver-21:
+        webserver-22:
