@@ -16,11 +16,11 @@ all:
       hostname: webserver-2
       private_ip: 10.10.10.12
       f5_pool_member: www_pool1
-    # webserver-3:
-    #   ansible_host: 172.16.1.198
-    #   hostname: webserver-3
-    #   private_ip: 10.10.10.13
-    #   f5_pool_member: www_pool1
+    webserver-3:
+      ansible_host: 172.16.1.198
+      hostname: webserver-3
+      private_ip: 10.10.10.13
+      f5_pool_member: www_pool1
     tower:
       ansible_host: 172.16.1.9
     webserver-21:
@@ -41,7 +41,7 @@ all:
       hosts: 
         webserver-1:
         webserver-2:
-        # webserver-3:
+        webserver-3:
         webserver-21:
         webserver-22:
         tower:
@@ -49,14 +49,14 @@ all:
       hosts: 
         webserver-1:
         webserver-2:
-        # webserver-3:
+        webserver-3:
         webserver-21:
         webserver-22:
     www_pool1:
       hosts: 
         webserver-1:
         webserver-2:
-        # webserver-3:
+        webserver-3:
     www_pool2:
       hosts:
         webserver-21:
