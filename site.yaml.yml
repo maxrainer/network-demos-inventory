@@ -1,0 +1,15 @@
+
+---
+# yaml plugin used
+
+all: 
+  hosts: 
+    nx7k-1:
+      ansible_host: 172.16.1.151
+    nx9k-1:
+      ansible_host: 172.16.1.152
+  children:
+    nxos:
+      hosts:
+        nx7k-1:
+        nx9k-1:
