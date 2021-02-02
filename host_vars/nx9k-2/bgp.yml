@@ -6,7 +6,7 @@ bgp_nxos_global_config:
       multipath_relax: True
     compare_neighborid: True
   neighbors:
-    - neighbor_address: 192.168.1.12
+    - neighbor_address: 192.168.1.11
       remote_as: '11000'
   vrfs:
     - vrf: vrf1
@@ -15,18 +15,18 @@ bgp_nxos_global_config:
           remote_as: '11001'
     - vrf: vrf2
       neighbors:
-        - neighbor_address: 192.168.2.12
-          remote_as: '2'
-          local_as: '1'
+        - neighbor_address: 192.168.2.11
+          remote_as: '1'
+          local_as: '2'
 
 bgp_nxos_af_config:
   - vrf: vrf2
     asn: '11000'
-    neighbor: 192.168.2.12
+    neighbor: 192.168.2.11
     afi: ipv4
     safi: unicast
   - vrf: default
     asn: '11000'
-    neighbor: 192.168.1.12
+    neighbor: 192.168.1.11
     afi: ipv4
     safi: unicast
