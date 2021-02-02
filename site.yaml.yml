@@ -8,6 +8,8 @@ all:
       ansible_host: 172.16.1.151
     nx9k-1:
       ansible_host: 172.16.1.152
+    nx9k-2:
+      ansible_host: 172.16.1.153
   children:
     cisco:
       children:
@@ -15,3 +17,9 @@ all:
           hosts:
             nx7k-1:
             nx9k-1:
+            nx9k-2:
+          children:
+            nx9k:
+              hosts:
+                nx9k-1:
+                nx9k-2:

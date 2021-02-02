@@ -1,0 +1,23 @@
+bgp_nxos_global_config:
+  as_number: '11000'
+  log_neighbor_changes: true
+  bestpath:
+    as_path:
+      multipath_relax: True
+    compare_neighborid: True
+  neighbors:
+    - neighbor_address: 192.168.1.11
+      remote_as: '11000'
+    - neighbor_address: 192.168.1.12
+      remote_as: '12000'
+    - neighbor_address: 192.168.1.13
+      remote_as: '13000'
+  vrfs:
+    - vrf: vrf1
+      neighbors:
+        - neighbor_address: 192.168.1.11
+          remote_as: '11000'
+    - vrf: vrf2
+      neighbors:
+        - neighbor_address: 192.168.1.12
+          remote_as: '12000'
