@@ -1,0 +1,6 @@
+
+aci_epg:
+  description: EPG green one
+  bd: green_web
+  tenant: green
+  ap: ap_green_web

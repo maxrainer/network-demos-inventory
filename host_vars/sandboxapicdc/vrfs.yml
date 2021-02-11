@@ -1,0 +1,7 @@
+aci_vrfs:
+  vrf_b_1:
+    tenant: blue
+    description: VRF blue one
+  vrf_g_1:
+    tenant: green
+    description: VRF green one

@@ -1,0 +1,21 @@
+aci_bridgedomains:
+  - name: blue_web
+    vrf: vrf_b_1
+    subnets: 
+    - gateway: 10.201.0.1
+      mask: 28
+      name: sub_blue_web_1
+    - gateway: 10.201.1.1
+      name: sub_blue_web_2
+  - name: green_web
+    vrf: vrf_g_1
+    subnets:
+    - gateway: 10.202.0.1
+  - name: blue_db
+    vrf: vrf_b_1
+    subnets:
+      - gateway: 10.201.10.1
+  - name: green_db
+    vrf: vrf_g_1
+    subnets:
+    - gateway: 10.202.10.1

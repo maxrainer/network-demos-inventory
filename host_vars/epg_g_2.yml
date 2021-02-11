@@ -1,0 +1,8 @@
+aci_epg_state: present
+
+aci_epg:
+  description: EPG green two
+  bd: green_db
+  tenant: green
+  ap: ap_green_db
+

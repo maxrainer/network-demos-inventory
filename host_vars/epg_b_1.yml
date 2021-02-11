@@ -1,0 +1,6 @@
+
+aci_epg:
+  description: EPG blue one
+  bd: blue_web
+  tenant: blue
+  ap: ap_blue_web

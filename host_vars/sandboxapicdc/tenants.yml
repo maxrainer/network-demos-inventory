@@ -1,0 +1,10 @@
+aci_tenants:
+  - name: blue
+    aps:
+      - name: ap_blue_web
+        description: app profile blue web
+      - name: ap_blue_db
+  - name: green
+    aps:
+      - name: ap_green_web
+      - name: ap_green_db

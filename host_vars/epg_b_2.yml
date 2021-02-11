@@ -1,0 +1,6 @@
+
+aci_epg:
+  description: EPG blue two
+  bd: blue_db
+  tenant: blue
+  ap: ap_blue_db
