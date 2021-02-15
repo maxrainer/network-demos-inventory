@@ -4,3 +4,8 @@ aci_epg:
   bd: blue_web
   tenant: blue
   ap: ap_blue_web
+  contracts:
+    - contract_type: provider
+      contract: web
+      priority: level2
+      state: present
