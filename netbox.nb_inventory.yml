@@ -1,0 +1,10 @@
+plugin: netbox.netbox.nb_inventory
+api_endpoint: https://172.16.1.16
+token: "0123456789abcdef0123456789abcdef01234567"
+validate_certs: False
+config_context: False
+interfaces: yes
+group_by:
+  - device_roles
+  - sites
+  - device_types

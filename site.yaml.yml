@@ -1,0 +1,30 @@
+---
+# yaml plugin used
+
+all: 
+  hosts: 
+    ios-rt1:
+      ansible_host: 172.16.1.151
+    ios-rt2:
+      ansible_host: 172.16.1.152
+    ios-sw1:
+      ansible_host: 172.16.1.153
+    eos-rt1:
+      ansible_host: 172.16.1.154
+  children:
+    router:
+      hosts:
+        ios-rt1:
+        ios-rt2:
+        eos-rt1:
+    switch:
+      hosts:
+        ios-sw1:
+    ios:
+      hosts:
+        ios-rt1:
+        ios-rt2:
+        ios-sw1:
+    eos:
+      hosts:
+        eos-rt1:

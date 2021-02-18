@@ -1,0 +1,5 @@
+---
+ansible_user: admin
+ansible_ssh_pass: Cisco123  
+
+net_netbox_url: https://172.16.1.16
