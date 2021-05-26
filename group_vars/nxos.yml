@@ -1,0 +1,16 @@
+---
+ansible_connection: network_cli
+ansible_network_os: nxos
+
+update_server_lead: true
+update_server_inventory_hostname: linuxserver
+update_server_directory: "/tmp/"
+update_file_name: text.txt
+
+#update_file_checksum: 3178086171
+update_file_checksum: 69861960ba67de9729cdcec03f3c7d1e
+update_file_checksum_method: md5sum
+update_kickstart_version: 9.3(6)
+
+# only for tests required
+update_image_name_new: nxos.9.3.6.bin
