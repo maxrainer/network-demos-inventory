@@ -9,12 +9,12 @@ all:
     webserver-1:
       ansible_host: 172.16.1.200
       hostname: webserver-1
-      private_ip: 10.10.10.11
+      private_ip: 172.16.1.200
       f5_pool_member: www_pool1
     webserver-2:
       ansible_host: 172.16.1.199
       hostname: webserver-2
-      private_ip: 10.10.10.12
+      private_ip: 172.16.1.199
       f5_pool_member: www_pool1
     tower:
       ansible_host: 172.16.1.9
