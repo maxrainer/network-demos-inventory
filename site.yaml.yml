@@ -14,10 +14,6 @@ all:
     nxos-9k:
       ansible_host: 172.16.1.162
       ansible_password: Cisco123
-    linuxserver: 
-      ansible_host: 172.16.1.9
-      ansible_user: max
-      ansible_ssh_pass: gruen100
   children:
     router:
       hosts:
