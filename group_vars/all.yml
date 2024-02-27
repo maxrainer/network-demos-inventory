@@ -1,8 +1,11 @@
 ---
 
-net_netbox_url: https://172.16.1.16
+net_netbox_url: http://172.16.1.18
+net_netbox_token: "0123456789abcdef0123456789abcdef01234567"
+net_site: 'hetzner'
+net_device_role: router
 
-ansible_user: admin
+ansible_user: cisco
 ansible_ssh_pass: Cisco123
 
 update_log_hidden: false
