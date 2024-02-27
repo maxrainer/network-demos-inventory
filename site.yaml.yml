@@ -6,7 +6,7 @@ all:
     ios-rt1:
       ansible_host: 172.16.4.151
     ios-rt2:
-      ansible_host: 172.16.4.152
+      ansible_host: 172.16.4.156
     ios-sw1:
       ansible_host: 172.16.4.153
     eos-rt1:
