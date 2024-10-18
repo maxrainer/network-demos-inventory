@@ -1,1 +1,1 @@
-# **Ansible dynamic inventories **s
+# **Ansible dynamic inventories **
